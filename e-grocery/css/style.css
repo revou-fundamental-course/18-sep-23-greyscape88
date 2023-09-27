@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: monospace;
+    padding: 20px;
+    background: #f1f1f1;
+}
+  
+  /* Header*/
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+  
+.content-banner {
+    font-size: 70px;
+    color: forestgreen;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 35px;
+  
+  color: forestgreen;
+}
+
+h4 {
+  font-size: 25px; 
+  
+}
+
+h5{
+  font-size: 22px;
+  color: #797979;
+}
+
+h6 {
+  font-size: 18px;
+  color: #797979
+}
+
+.spanStyle {
+  font-size: 30px;
+  color: #797979;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    font-size: 25px;
+}
+
+.nav {
+    display: flex;
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.nav-item {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:hover {
+    background-color: gray;
+}
+
+
+
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+.leftcolumn {
+    float: left;
+    width: 70%;
+  }
+  
+.content-image {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-image span{
+  color: gray;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+
+.active {
+  display: block;
+}
+
+.testimoni {
+  font-size: 15px;
+  text-align: left;
+}
+
+  /* Right column */
+.rightcolumn {
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+  }
+  
+.content-form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: rgb(240, 240, 240);
+    font-size: 25px;
+    font-family: monospace;
+ 
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    font-size: 20px;
+  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    resize: vertical
+}
+
+select {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+}
+
+textarea {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 5px;
+  font-size: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background: rgb(0, 131, 0);
+    color: white;
+    padding: 10px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: rgb(0, 80, 13);
+    color: rgb(233, 233, 233);
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+  
+  /* frame border */
+  .frame {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+.list-wrap {
+    padding:40px;
+    font-size: 21px;
+    border-radius:5px;
+    width:100%;
+   
+  }
+ 
+div.list {
+    counter-reset: list-number;
+}
+
+  div.list div:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+    
+    margin-right: 10px;
+    margin-bottom:10px;
+    width:35px;
+    height:35px;
+    display:inline-flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 23px;
+    background-color:forestgreen;
+    border-radius:50%;
+    color:#fff;
+  }
+
+ 
+  .middle {
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 20px;
+  }
+
+.middleSection {
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 20px;
+}
+
+.middlewrapper {
+    margin: 15px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .column1 {
+    height: 200px;
+    text-align: left;
+  }
+  
+  .column2 {
+    height: 200px;
+    text-align: left;
+  }
+  .column3 {
+    height: 200px;
+    text-align: left;
+  }
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 20px;
+}
+
+.button1 {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background: rgb(0, 131, 0);
+    color: white;
+    padding: 10px 0;
+    width: 500px;
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 20px;
+       
+}
+
+.button1:hover {
+    background: rgb(0, 80, 13);
+    color: rgb(233, 233, 233);
+}
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
